@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_login_head"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/ibtn_login_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_close"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电子商城登录"
+            android:textColor="#0af"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_choose_login_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/rl_login_head"
+        android:layout_alignParentStart="true">
+
+        <RadioGroup
+            android:id="@+id/rg_login_choose_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+
+            >
+            <RadioButton
+                android:id="@+id/rb_login_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号密码登录"
+                android:button="@null"
+                android:padding="5dp"
+                android:background="#FF0"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_login_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="动态验证码登录"
+                android:button="@null"
+                android:padding="5dp"
+                />
+
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/fl_login_way"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_below="@+id/rl_choose_login_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:text="登录"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_choose_login_way"
+        >
+        <LinearLayout
+            android:id="@+id/rg_login_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+
+            >
+
+            <Button
+                android:id="@+id/rb_login_find_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:padding="5dp"
+                android:checked="false"
+                android:text="找回密码" />
+
+            <Button
+                android:id="@+id/rb_login_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="免费注册"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:padding="5dp"
+                android:checked="false"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电子商城版权所有"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+
+
+</RelativeLayout>
